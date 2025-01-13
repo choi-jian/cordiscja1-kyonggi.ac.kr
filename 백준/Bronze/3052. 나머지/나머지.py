@@ -1,6 +1,7 @@
-nums=[]
+num=[] #num 이라는 배열을 만들고 시작 
 for i in range(10):
-  n=int(input())
-  if n%42 not in nums:
-    nums.append(n%42)
-print(len(nums))
+  n=int(input())%42
+  if n not in num:
+    num.append(n)
+
+print(len(num))
